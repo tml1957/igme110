@@ -1,24 +1,68 @@
-h1{
-    align-content: center;
-    align-self: center;
-    text-align: center;
-    color: brown;
+*{
+    box-sizing: border-box;
 }
 
-body{
-    background-color: burlywood;
+#wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 1000px
 }
 
-img{
-    margin: 8px;
-    border: 8px black solid;
-    height: 200px;
-    width: 400px;
-    float: right;
+.mygrid {
+    display: grid;
+    width: 80%;
+    grid-template-rows: 100px 50px 1fr 50px;
+    grid-template-columns: 21% 58% 21%;
+    background-color: rgb(88, 171, 199);
+}
+
+header {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    
+    background-color: White;
+}
+
+nav {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    justify-content: right;
+    background-color: white;
+    border: 5px solid black;
+    text-align: Center;
+    font-size: 20px;
+    -webkit-text-fill-color: rgb(78, 78, 78);
+}
+
+li {
+    display: inline-block;
+    margin: -12px;
+}
+
+.left {
+    grid-row: 0/4;
+    grid-column: 1/2;
+}
+
+.right {
+    grid-row: 0/4;
+    grid-column: 3/4;
     
 }
 
-p{
-    font-size: 1.5em;
-    font-family: 'Titillium Web', sans-serif;
+.center{
+    grid-row: 3/4;
+    grid-column: 2/3;
+    background-color: rgb(78,78,78);
+}
+p {
+    background-color: white;
+    border: 5px solid black;
+}
+
+footer{
+    grid-row: 4/5;
+    grid-column: 2/3;
+    background-color: gray;
 }
