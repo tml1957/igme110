@@ -91,7 +91,6 @@ p {
 footer{
     font-family: 'PT Sans', sans-serif;
     font-size: 15pt;
-    line-height: 1.7;
     grid-row: 4/5;
     grid-column: 2/3;
     background-color: gray;
